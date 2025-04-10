@@ -25,5 +25,6 @@ COPY --from=app /app /app
 RUN mkdir -p cache compiles db output \
 &&  chown node:node cache compiles db output
 
-CMD ["node", "start.js"]
+CMD ["node", "src/server.js"]
+
 
