@@ -25,4 +25,5 @@ COPY --from=app /app /app
 RUN mkdir -p cache compiles db output \
 &&  chown node:node cache compiles db output
 
-CMD ["node", "--expose-gc", "app.js"]
+CMD ["node", "start.js"]
+
